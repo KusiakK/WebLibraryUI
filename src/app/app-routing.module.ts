@@ -3,6 +3,11 @@ import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
+  {
     path: 'test',
     loadChildren: './test/test.module#TestModule'
   },
