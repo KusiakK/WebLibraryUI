@@ -10,6 +10,7 @@ import {HeaderComponent} from './shared/layout/header.component';
 import {SharedModule} from './shared/shared.module';
 import {FooterComponent} from './shared/layout/footer.component';
 import {HomeModule} from './home/home.module';
+import {BrowseBooksModule} from './browse-books/browse-books.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {HomeModule} from './home/home.module';
     HttpClientModule,
     SharedModule,
     HomeModule,
+    BrowseBooksModule,
   ],
   providers: [AuthorService],
   bootstrap: [AppComponent]
