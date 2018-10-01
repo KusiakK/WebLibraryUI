@@ -11,6 +11,7 @@ import {SharedModule} from './shared/shared.module';
 import {FooterComponent} from './shared/layout/footer.component';
 import {HomeModule} from './home/home.module';
 import {BrowseBooksModule} from './browse-books/browse-books.module';
+import {BookService} from './services/book.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,10 @@ import {BrowseBooksModule} from './browse-books/browse-books.module';
     HomeModule,
     BrowseBooksModule,
   ],
-  providers: [AuthorService],
+  providers: [
+    AuthorService,
+    BookService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
