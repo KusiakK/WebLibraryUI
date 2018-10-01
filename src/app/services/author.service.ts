@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from "@angular/common/http";
-import  {Observable } from "rxjs";
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
@@ -11,7 +11,8 @@ const httpOptions = {
 })
 export class AuthorService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
   getAuthors() {
     return this.http.get('/server/api/v1/authors');
